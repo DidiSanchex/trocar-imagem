@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 2</title>
+</head>
+<body>
+    <img src="gatinho feliz.png" width="200" height="200" alt="gatinho feliz" id="img">
+    <br>
+    <br>
+    <br>
+    <button onClick="trocar()">Trocar imagem</button>
+    <script>
+        const img = document.getElementById("img");
+        let modo = 0;
+        function trocar() {
+            if (modo==0){     
+                img.src = "gatinhotrsite.webp";
+                modo=1;
+            } else if(modo==1){
+                img.src= "gatinho feliz.png";
+                modo=0;
+            }
+        }
+    </script>
+       
+ </body>
+</html>
